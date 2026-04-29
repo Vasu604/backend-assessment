@@ -12,4 +12,5 @@ function errorHandler(err, _req, res, _next) {
   });
 }
 
+// export error handler
 module.exports = { errorHandler };
