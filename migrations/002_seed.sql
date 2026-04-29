@@ -2,6 +2,7 @@ INSERT INTO users (id, name)
 VALUES (1, 'Assessment User')
 ON CONFLICT (id) DO NOTHING;
 
+-- Seed products table with default products
 INSERT INTO products (name, sku, stock_qty, price)
 VALUES
   ('Laptop Bag', 'SKU001', 100, 49.99),
