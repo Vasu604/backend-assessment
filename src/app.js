@@ -7,6 +7,7 @@ const app = express();
 
 app.use(express.json());
 
+// root endpoints
 app.use("/health", healthRouter);
 app.use("/orders", ordersRouter);
 
