@@ -179,7 +179,6 @@ async function listOrders(client, query) {
      OFFSET $${values.length}`,
     values
   );
-
   const countValues = values.slice(0, values.length - 2);
   const countResult = await client.query(
     `SELECT COUNT(*)::int AS count
