@@ -1,0 +1,23 @@
+{
+  "name": "backend-assessment",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "migrate": "node scripts/runMigrations.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Backend assessment solution using Express and PostgreSQL",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.20.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
